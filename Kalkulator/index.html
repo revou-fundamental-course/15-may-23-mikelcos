@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kalkulator Ketik</title>
     <link rel="shortcut icon" type="image/x-icon" href="Screenshot 2023-05-25 164934.png" />
@@ -47,11 +46,11 @@
             <div>
                 <h2 class="hitung">Hitung Luas Persegi</h2><br>
                 <form>
-                    <label for="answer">Masukkan Panjang Sisi :</label><br>
-                    <input type="text" id="hitung-luas" name="hitung-luas" required><br><br>
-                    <button type="submit" name="submit" id="button" onclick="scoring()">Hitung</button>
+                    <label for="answer">Masukkan Panjang Sisi (cm):</label><br>
+                    <input type="number" id="sisi" name="hitung-luas" required><br><br>
+                    <input type="button" value="Hitung" id="button" onclick="hitungLuasPersegi()"></input>
                   </form>
-                  <br><p>Hasil : <div></div></p>
+                  <br><p><strong>Hasil : </strong></p><div id="hasilLuasPersegi"></div>
             </div>
 
             <br>
@@ -69,11 +68,11 @@
                 <div>
                     <h2 class="hitung">Hitung Keliling Persegi</h2><br>
                     <form>
-                        <label for="answer">Masukkan Panjang Sisi :</label><br>
-                        <input type="text" id="hitung-keliling" name="hitung-keliling" required><br><br>
-                        <button type="submit" name="submit" id="button" onclick="scoring()">Hitung</button>
+                        <label for="answer">Masukkan Panjang Sisi (cm):</label><br>
+                        <input type="number" id="sisi2" name="hitung-keliling" required><br><br>
+                        <input type="button" value="Hitung" id="button" onclick="hitungKelilingPersegi()"></input>
                       </form>
-                      <br><p>Hasil : <div></div></p>
+                      <br><p><strong>Hasil : </strong></p><div id="hasilKelilingPersegi"></div>
                 </div>
             </div>
         </div>
@@ -94,11 +93,13 @@
             <div>
                 <h2 class="hitung">Hitung Luas Persegi Panjang</h2><br>
                 <form>
-                    <label for="answer">Masukkan Panjang dan Lebar :</label><br>
-                    <input type="text" id="hitung-luas" name="hitung-luas" required><br><br>
-                    <button type="submit" name="submit" id="button" onclick="scoring()">Hitung</button>
+                    <label for="answer">Masukkan Panjang (cm):</label><br>
+                    <input type="number" id="panjang" name="hitung-luas" required><br>
+                    <label for="answer">Masukkan Lebar (cm):</label><br>
+                    <input type="number" id="lebar" name="hitung-luas" required><br><br>
+                    <input type="button" value="Hitung" id="button" onclick="hitungLuasPp()"></input>
                   </form>
-                  <br><p>Hasil : <div></div></p>
+                  <br><p>Hasil : </p><div id="hasilLuasPp"></div>
             </div>
 
             <br>
@@ -117,11 +118,13 @@
                 <div>
                     <h2 class="hitung">Hitung Keliling Persegi Panjang</h2><br>
                     <form>
-                        <label for="answer">Masukkan Panjang dan Lebar :</label><br>
-                        <input type="text" id="hitung-keliling" name="hitung-keliling" required><br><br>
-                        <button type="submit" name="submit" id="button" onclick="scoring()">Hitung</button>
+                        <label for="answer">Masukkan Panjang (cm):</label><br>
+                        <input type="number" id="panjang2" name="hitung-keliling" required><br>
+                        <label for="answer">Masukkan Lebar (cm):</label><br>
+                        <input type="number" id="lebar2" name="hitung-keliling" required><br><br>
+                        <input type="button" value="Hitung" id="button" onclick="hitungKelilingPp()"></input>
                       </form>
-                      <br><p>Hasil : <div></div></p>
+                      <br><p>Hasil : </p><div id="hasilKelilingPp"></div>
                 </div>
             </div>
         </div>
@@ -131,5 +134,6 @@
     <footer>
         &copy; 2023 Katik. All rights reserved.
     </footer>
+    <script src="script.js" type="text/javascript"></script>
 </body>
 </html>
