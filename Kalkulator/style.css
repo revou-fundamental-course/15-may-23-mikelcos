@@ -1,0 +1,131 @@
+*,
+html {
+     margin: 0;
+}
+
+body {
+    background-color:#32a0f59e;
+}
+
+header {
+    background-color: blue;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.katik {
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.kaltik {
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.greeting {
+    background-color: #39a0ef9e;
+    text-align: center;
+    padding: 30px;
+    margin-bottom: 10px;
+    font-size: large;
+}
+
+.pgreeting {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+}
+
+.greeting-heading {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+li {
+    background-color: #39a0ef9e;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+    border: 1px;
+    padding: 10px;
+    padding-left: 600px;
+    padding-right: 600px;
+    font-size: 20px;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: blue;
+    transition: 0.5s ease-in-out;
+    transition-delay: 0.1s;
+    border-radius: 5px;
+}
+
+#persegi {
+    background-color: white;
+    margin: 8px;
+    padding: 8px;
+    margin-bottom: 80px;
+}
+
+#persegipanjang {
+    background-color: white;  
+    margin: 8px;
+    padding: 8px;
+    margin-bottom: 80px;
+}
+
+.title-head {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 40px;
+    background-color: blue;
+}
+
+.image {
+    margin-left: 650px;
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+.imagepp {
+    margin-left: 600px;
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+#button {
+    background-color: rgb(205, 205, 244);
+}
+
+.hitung {
+    background-color: rgb(24, 24, 212);
+    text-align: center;
+    padding: 25px;
+    margin: 25px;
+}
+
+footer {
+    background-color: blue;
+    padding: 40px;
+    text-align: center;
+    font-size: large;
+    color: white;
+}
